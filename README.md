@@ -148,13 +148,12 @@ annotator_env\Scripts\activate
 Deine Eingabeaufforderung sollte nun so aussehen:
 
 ```bash
-(annotator_env) C:\Users\yourname\code\socratic-annotator_app
-
+(annotator_env) C:\Users\yourname\code\socratic-annotator_app>
 ```
 
 
 
-## 🧩 Schritt 3 – Dependencies installieren
+## 🧩 Schritt 3 – Dependencies installieren
 
 ```bash
 pip install streamlit pandas openpyxl
@@ -165,7 +164,7 @@ pip install --upgrade openpyxl
 ```
 
 
-## 🧩 Schritt 4 – App starten
+## 🧩 Schritt 4 – App starten
 
 ```bash
 streamlit run app.py
@@ -186,7 +185,7 @@ Network URL: http://192.168.254.108:8502
 
 
 
-## 🧩 Schritt 5 – venv wieder verlassen
+## 🧩 Schritt 5 – venv wieder verlassen
 
 
 macOS + Windows:
@@ -195,7 +194,7 @@ macOS + Windows:
 deactivate
 ```
 
-## 🧩 Optional – venv löschen (wenn nicht mehr benötigt)
+## 🧩 Optional – venv löschen (wenn nicht mehr benötigt)
 
 Einfach den gesamten Ordner entfernen
 
