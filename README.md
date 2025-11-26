@@ -151,6 +151,8 @@ Deine Eingabeaufforderung sollte nun so aussehen:
 (annotator_env) C:\Users\yourname\code\socratic-annotator_app>
 ```
 
+
+
 ## 🧩 Schritt 3 – Dependencies installieren
 
 ```bash
@@ -162,7 +164,7 @@ pip install --upgrade openpyxl
 ```
 
 
-## 🧩 🧩 Schritt 4 – App starten
+## 🧩 Schritt 4 – App starten
 
 ```bash
 streamlit run app.py
@@ -198,10 +200,10 @@ Einfach den gesamten Ordner entfernen
 
 
 ---
----
 
 
-# 📝 Manual
+
+# 📝 Manual
 
 Wenn die App gestartet ist:
 
