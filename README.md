@@ -216,15 +216,15 @@ Wenn die App gestartet ist:
 - Mit „Weiter →“ die AI-Zeilen annotieren
 - Ergebnisse / Zwischenergebnisse erscheinen in "results/"-Ordner
 
-Es werden beim Annotieren jeweils eine Kopie der ausgewählten Datei gemacht und im result-ordner gespeichert.
+Es wird beim Annotieren jeweils eine Kopie der ausgewählten Datei gemacht und im "result"-Ordner gespeichert.
 Wenn die letzte Tutorantwort beurteilt wurde, wird der Excel-Kopie ein Kürzel und der Zeitstempel im Namen angefügt.
 Unfertig annotierte Files bekommen den postfix "_in_progress" an den Namen gehängt und können fortgesetzt werden.
 
 
 
 **Achtung, es gibt Probleme mit dem Rendering von Latex, Markdown etc.**
-bei unklarheiten kann der originale Inhalt der Excel-Zellen angeschaut werden via
+bei Unklarheiten kann der originale Inhalt/Text der Excel-Zellen angeschaut werden via den Button:
 
-"🔍 Original anzeigen (Excel-Rohtext)" - Button
+- "🔍 Original anzeigen (Excel-Rohtext)"
 
 
