@@ -148,7 +148,8 @@ annotator_env\Scripts\activate
 Deine Eingabeaufforderung sollte nun so aussehen:
 
 ```bash
-(annotator_env) C:\Users\yourname\code\socratic-annotator_app>
+(annotator_env) C:\Users\yourname\code\socratic-annotator_app
+
 ```
 
 
