@@ -1,143 +1,147 @@
-# socratic-annotator_app
+# Socratic Annotator – Installation Guide
 
-Tutor Annotation App
+Dieses Tool erlaubt dir, LLM-Antworten effizient zu annotieren.  
+Die Anwendung läuft als **Streamlit-App** und kann auf zwei Arten installiert werden:
 
-Ein Tool zur Annotation von Tutor–Antworten basierend auf Excel-Dialogdaten.
+---
 
-Dieses Repository enthält:
+## 📦 1. Projekt herunterladen
 
-app.py – die Streamlit App
+1. Gehe zu GitHub → Projektseite  
+2. Klicke auf **`<> Code` → `Download ZIP`**  
+3. Entpacke die ZIP-Datei an einen gewünschten Ort.
 
-input_files/ – Ordner für neue Excel-Dateien
 
-results/ – hier speichert die App deine annotierten Dateien
+Im Ordner findest du:
+- app.py
+- README.md
+- input_files/   <--enthält ein Testfile, bitte ignorieren
+- results/
 
-README.md – diese Anleitung
 
-Installation Guide
+---
 
-Du kannst die App auf zwei Arten ausführen:
+# 🚀 Installation (2 Wege)
 
-Mit global installiertem Python (einfach & für alle ausreichend)
+Du kannst die App auf zwei verschiedene Arten ausführen:
 
-Mit einer eigenen Python-virtuellen Umgebung (empfohlen)
-– sauber, isoliert, keine Konflikte, leichter entfernbar
+1. **Globales Python installieren**  
+2. **Isolierte virtuelle Umgebung (empfohlen)**
 
-Beide Wege funktionieren auf macOS und Windows.
+Beide Varianten funktionieren auf macOS und Windows.
 
-📥 1. Repository herunterladen
-Option A — Über Github ZIP (einfach)
+---
 
-Klicke auf den grünen <> Code-Button.
+# 1️⃣ Variante A – Globales Python installieren (einfachste Methode)
 
-Wähle Download ZIP.
+### ✔︎ Gut geeignet für:
+- Nutzer ohne Python-Erfahrung  
+- Wenn du schnell starten möchtest  
+- Wenn dein System bereits Python nutzt und du keine isolierte Umgebung brauchst
 
-Entpacke das ZIP in einen Ordner deiner Wahl, z. B.:
+---
+
+## 🧩 Schritt 1 – Python installieren
+
+### macOS:
+Download: https://www.python.org/downloads/macos/
+
+### Windows:
+Download: https://www.python.org/downloads/windows/
+
+**Wichtig:** Beim Installieren unbedingt aktivieren:
+
+- **Add Python to PATH** (Windows)
+- Danach Terminal/PowerShell neu starten
+
+---
+
+## 🧩 Schritt 2 – Benötigte Pakete installieren
+
+Öffne Terminal / PowerShell im Projektordner:
+
+```bash
+cd path/zum/Projektordner
+```
+
+```bash
+pip install streamlit pandas openpyxl
+```
+
+## 🧩 Schritt 3 – App starten
+streamlit run app.py
+
+---
+
+
+# 2️⃣ Variante B – Virtuelle Umgebung (empfohlen)
+
+**✔︎ Vorteile:**
+
+- Keine Paket-Konflikte
+- Saubere, isolierte Umgebung
+- Kann später vollständig gelöscht werden
+- Verhindert Versionsprobleme
+
+
+---
+
+## 🧩 Schritt 1 – venv erstellen
 
 macOS:
 
-/Users/deinname/Code/socratic-annotator_app/
+```bash
+cd path/zum/Projektordner
+python3 -m venv 
+```
 
-
-Windows:
-
-C:\Users\deinname\code\socratic-annotator_app\
-
-🐍 2. Installation mit globalem Python
-
-(Einfachste Methode – funktioniert überall)
-
-Voraussetzung
-
-Installiere Python (falls nicht vorhanden):
-
-macOS: https://www.python.org/downloads/macos/
-
-Windows: https://www.python.org/downloads/windows/
-
-→ Achtung: Beim Installer „Add Python to PATH“ aktivieren!
-
-Schritt 1: Abhängigkeiten installieren
-macOS Terminal öffnen
-cd /Users/deinname/Code/socratic-annotator_app
-pip install -r requirements.txt
-
-Windows PowerShell / CMD öffnen
-cd C:\Users\deinname\code\socratic-annotator_app
-pip install -r requirements.txt
-
-Schritt 2: App starten
-macOS
-streamlit run app.py
 
 Windows
+
+```bash
+cd path/zum/Projektordner
+python3 -m venv app_env
+```
+
+
+## 🧩 Schritt 2 – venv aktivieren
+
+macOS:
+
+```bash
+source app_env/bin/activate
+```
+
+
+```bash
+app_env\Scripts\activate
+```
+
+
+## 🧩 Schritt 3 – Dependencies installieren
+
+
+pip install streamlit pandas openpyxl
+
+
+## 🧩 Schritt 4 – App starten
+
+```bash
 streamlit run app.py
+```
 
 
-Fertig ✔
-Der Browser öffnet sich automatisch.
+## 🧩 Schritt 5 – venv wieder verlassen
 
-🧪 3. (Empfohlen) Installation mit Virtual Environment
 
-Ein venv isoliert deine App vollständig vom restlichen System.
+macOS + Windows::
 
-Vorteile
 
-Kein Konflikt mit System-Python oder anderen Projekten
-
-Sauber entfernbar: einfach Ordner löschen
-
-Reproduzierbare Umgebung
-
-Standard in Softwareprojekten
-
-🔧 Anleitung: Virtual Environment
-macOS
-1. venv erstellen
-cd /Users/deinname/Code/socratic-annotator_app
-python3 -m venv venv
-
-2. aktivieren
-source venv/bin/activate
-
-3. Abhängigkeiten installieren
-pip install -r requirements.txt
-
-4. App starten
-streamlit run app.py
-
-5. venv deaktivieren
+```bash
 deactivate
+```
 
-Windows
-1. venv erstellen
-cd C:\Users\deinname\code\socratic-annotator_app
-python -m venv venv
+## 🧩 Optional – venv löschen (wenn nicht mehr benötigt)
 
-2. aktivieren
+Einfach den ganzen Ordner löschen.
 
-PowerShell:
-
-venv\Scripts\Activate.ps1
-
-
-CMD:
-
-venv\Scripts\activate.bat
-
-3. Abhängigkeiten installieren
-pip install -r requirements.txt
-
-4. App starten
-streamlit run app.py
-
-5. venv deaktivieren
-deactivate
-
-🗑 Entfernen / Aufräumen
-
-Lösche einfach den gesamten Projektordner
-
-OPTIONAL: Wenn du ein venv verwendet hast, lösche nur den Ordner venv/
-
-Keine Registry-Einträge, keine Systemänderungen.
